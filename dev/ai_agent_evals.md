@@ -4,6 +4,8 @@ Guidelines for testing and evaluating AI agents in production, based on [Anthrop
 
 ## Why Evals Matter
 
+From [Anthropic's engineering guide](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents):
+
 The capabilities that make AI agents useful (autonomy, intelligence, flexibility) are the same ones that make them hard to evaluate. You can't just run unit tests and expect your agentic app to work.
 
 Good evaluations help teams:
@@ -67,6 +69,8 @@ These diverge dramatically. At k=10, pass@k can approach 100% while pass^k falls
 - Grading the path taken rather than the outcome
 
 ## Real-World Example: Descript
+
+From [Anthropic's engineering guide](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents):
 
 Descript's agent helps users edit videos. They built evals around three dimensions:
 

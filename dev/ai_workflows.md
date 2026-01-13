@@ -12,6 +12,8 @@ Unstructured prompting leads to:
 
 ## Ryan Carson's 3-Step System
 
+From [Ryan Carson](https://x.com/ryancarson/status/2008548371712135632):
+
 Transform chaotic AI coding into a structured, reliable process:
 
 ### Step 1: PRD Generation
@@ -40,6 +42,8 @@ An autonomous agent that builds features while you sleep:
 3. Run looped script that ships work in clean iterations
 
 ## Memory Layers
+
+From [Ryan Carson](https://x.com/ryancarson/status/2008548371712135632):
 
 Maintain context across sessions:
 

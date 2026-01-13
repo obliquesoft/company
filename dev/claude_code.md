@@ -4,12 +4,16 @@ Best practices for using Claude Code as a team, synthesized from industry expert
 
 ## Philosophy
 
+From [Boris Cherny](https://x.com/bcherny/status/2007179832300581177):
+
 - Claude Code works great out of the box - don't over-customize
 - There's no single "correct" way to use it; customize it for your workflow
 - Each team member may use it differently, and that's okay
 - Learning Claude Code transfers directly to other CLI coding tools
 
 ## Model Selection
+
+From [Boris Cherny](https://x.com/bcherny/status/2007179832300581177):
 
 Use **Opus 4.5 with thinking** for everything. Even though it's bigger and slower than Sonnet, it requires less steering and is better at tool use, making it faster overall for complex tasks.
 
@@ -19,6 +23,8 @@ For specific use cases:
 - **Haiku**: Lightweight sub-agent tasks where speed matters more than depth
 
 ## Shared CLAUDE.md
+
+From [Boris Cherny](https://x.com/bcherny/status/2007179832300581177):
 
 Maintain a single `CLAUDE.md` file in your repository root, checked into git:
 
@@ -38,6 +44,8 @@ Consider adopting the [AGENTS.md standard](https://www.aihero.dev/my-agents-md-f
 - The best agent files grow through iteration, not upfront planning
 
 ## Plan Mode First
+
+From [Boris Cherny](https://x.com/bcherny/status/2007179832300581177):
 
 Start most sessions in **Plan mode** (`shift+tab` twice):
 
@@ -60,6 +68,8 @@ Use thinking prompts for complex problems:
 
 ## Parallel Sessions
 
+From [Boris Cherny](https://x.com/bcherny/status/2007179832300581177):
+
 For maximum productivity, run multiple Claude sessions in parallel:
 
 - Run 5 parallel Claudes in terminal tabs, numbered 1-5
@@ -73,6 +83,8 @@ For maximum productivity, run multiple Claude sessions in parallel:
 Note: Expect 10-20% of sessions to be abandoned due to unexpected scenarios - this is normal.
 
 ## Slash Commands
+
+From [Boris Cherny](https://x.com/bcherny/status/2007179832300581177):
 
 Create slash commands for frequently used workflows:
 
@@ -100,6 +112,8 @@ Use at the end of a long coding session or to clean up complex PRs.
 
 ## Subagents
 
+From [Boris Cherny](https://x.com/bcherny/status/2007179832300581177):
+
 Use subagents to automate common workflows:
 
 - `code-simplifier` - simplify code after Claude finishes
@@ -114,6 +128,8 @@ Launch 3 sonnet based agents to...
 
 ## Verification (Key Tip)
 
+From [Boris Cherny](https://x.com/bcherny/status/2007179832300581177):
+
 **Give Claude a way to verify its work.** This is probably the most important thing for getting great results:
 
 - If Claude has a feedback loop, it will 2-3x the quality of the final result
@@ -123,6 +139,8 @@ Launch 3 sonnet based agents to...
 
 ## Hooks
 
+From [Boris Cherny](https://x.com/bcherny/status/2007179832300581177):
+
 ### PostToolUse Hooks
 
 Run a `PostToolUse` hook to clean up code formatting:
@@ -131,6 +149,8 @@ Run a `PostToolUse` hook to clean up code formatting:
 - A formatting hook ensures consistent style across all generated code
 
 ## Permissions
+
+From [Boris Cherny](https://x.com/bcherny/status/2007179832300581177):
 
 Rather than using `--dangerously-skip-permissions`:
 
@@ -153,6 +173,8 @@ Example workflows:
 
 ## Session Management
 
+From [Sankalp's Guide](https://sankalp.bearblog.dev/my-experience-with-claude-code-20-and-how-to-get-better-at-using-coding-agents/):
+
 - Use `/resume` to continue from an old session
 - Use `/rewind` to recover safely from mistakes
 - Tell Claude to keep documenting changes in a scratchpad for when you start a new session on the same branch
@@ -166,6 +188,8 @@ As [Martin Fowler observes](https://martinfowler.com/fragments/2026-01-08.html),
 For reviewing code and finding bugs, consider using different models for different tasks. Some developers find certain models better at finding bugs and mentioning severity levels (P1, P2) with fewer false positives.
 
 ## GitHub Integration
+
+From [Boris Cherny](https://x.com/bcherny/status/2007179832300581177):
 
 Use the Claude Code GitHub action for PR workflows:
 
